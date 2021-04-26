@@ -4,12 +4,12 @@ def call() {
       stages {
         stage('build') {
           steps {
-            sh "run build phase"
+            sh "echo 'build phase'"
           }
         }
         stage('upload') {
           steps {
-            sh "run upload phase"
+            sh "echo 'upload phase'"
           }
         }
       }
